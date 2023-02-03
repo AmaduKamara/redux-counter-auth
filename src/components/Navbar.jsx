@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <header className="bg-white py-6 px-56 flex justify-between shadow-lg">
+    <header className="bg-white py-6 px-56 flex items-center justify-between shadow-lg">
       <Link to="/" className="text-xl">
         Redux<em className="text-cyan-500 font-semibold">Counter</em>
       </Link>
 
       <nav>
-        <ul className="flex space-x-8">
+        <ul className="flex items-center space-x-8">
           <li className="cursor-pointer text-gray-600">
             <Link to="/">Home</Link>
           </li>

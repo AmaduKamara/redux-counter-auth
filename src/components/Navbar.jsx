@@ -11,7 +11,7 @@ const Navbar = () => {
       <nav>
         <ul className="flex items-center space-x-8">
           <li className="cursor-pointer text-gray-600">
-            <Link to="/">Home</Link>
+            <Link to="/">Counter</Link>
           </li>
           <li className="cursor-pointer text-gray-600">
             <Link to="/products">Products</Link>
@@ -25,7 +25,10 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="cursor-pointer text-gray-600">
-            <Link to="/" className="text-cyan-500 py-3 px-6 rounded-md border border-cyan-500 hover:bg-cyan-500 hover:text-white">
+            <Link
+              to="/"
+              className="text-cyan-500 py-3 px-6 rounded-md border border-cyan-500 hover:bg-cyan-500 hover:text-white"
+            >
               logout
             </Link>
           </li>

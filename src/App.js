@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
+import Counter from "./pages/Counter";
 import Products from "./pages/Products";
 
 const App = () => {
@@ -9,7 +9,7 @@ const App = () => {
       <Navbar />
       <div className="py-16 px-56">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Counter />} />
           <Route path="/products" element={<Products />} />
         </Routes>
       </div>

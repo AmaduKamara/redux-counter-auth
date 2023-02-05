@@ -1,11 +1,21 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { authActions } from "../store/index";
 
 const Auth = () => {
+  const dispatch = useDispatch();
+
+  const loginHandler = (e) => {
+    e.preventDefault();
+
+    dispatch(authActions.login());
+  };
+
   return (
     <div className="flex justify-center items-center my-12">
       <div className="w-[800px] shadow-xl bg-white p-6 rounded-md">
         <h1 className="font-bold text-3xl text-cyan-500 text-center">Login</h1>
-        <form className="my-8">
+        <form className="my-8" onSubmit={loginHandler}>
           <div className="mt-3">
             <label htmlFor="email" className="text-lg texg-gray-600">
               Email

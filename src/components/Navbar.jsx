@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { authActions } from "../store/index";
+import { authActions } from "../store/authSlice";
 
 const Navbar = () => {
   const isAuth = useSelector((state) => state.auth.isAuthenticated);
